@@ -1,0 +1,14 @@
+def determine_winner(v,c):
+beats={
+  'R':'S',
+  'S':'P',
+  'P':'R'
+  }
+if v==c:
+return "NULL"
+elif beats[v] == c:
+return "v"
+else:
+return "c"
+v,c=input().split()
+print(determine_winner(v.upper(),c.upper()))
